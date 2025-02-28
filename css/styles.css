@@ -65,7 +65,7 @@ header{
 }
 
 .search-bar button:hover {
-    background: #0056b3;
+    background: rgb(232, 17, 139);
 }
 .user{
     margin-top: -45%;
