@@ -1,0 +1,81 @@
+header{
+    font-family: sans-serif;
+    font-size: large;
+    color: black;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin-top: -4%;
+    margin-right: -2%;
+    margin-left: -2%;
+    padding: 50px;
+    size: 50px;
+    border-radius: 15%;
+}
+.logo{
+    margin-top: -8.5%;
+
+    flex: 1;
+    position: relative;
+    z-index: 10;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: 100px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 11;
+
+}
+.menu li{
+    margin-left: 30px;
+}
+.menu a{
+    text-decoration: none;
+}
+.other{
+    flex: 1;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: -12px ;
+    margin-left: 200px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    background: #e604b1de;
+    color: rgb(232, 17, 139);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #0056b3;
+}
+.user{
+    margin-top: -45%;
+    margin-right: -50%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.banner{
+    margin-top: -10%;
+    position: relative;
+    z-index: -1;
+}
