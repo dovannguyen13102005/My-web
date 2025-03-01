@@ -1,39 +1,52 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Căn giữa các phần tử */
+header{
+    font-family: sans-serif;
+    font-size: large;
+    color: black;
     background-color: blanchedalmond;
-    padding: 15px 5%;
-    border-radius: 10px;
+    text-align: center;
+    margin-top: -4%;
+    margin-right: -2%;
+    margin-left: -2%;
+    padding: 50px;
+    size: 50px;
+    border-radius: 15%;
 }
+.logo{
+    margin-top: -8.5%;
 
-/* LOGO */
-.logo img {
-    width: 120px;
-    height: auto;
+    flex: 1;
+    position: relative;
+    z-index: 10;
 }
-
-/* MENU */
-.menu {
+.menu{
     display: flex;
     list-style: none;
-    gap: 20px;
-}
+    padding: 0;
+    margin-left: 100px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 11;
 
-.menu a {
+}
+.menu li{
+    margin-left: 30px;
+}
+.menu a{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
 }
-
-/* THANH TÌM KIẾM */
+.other{
+    flex: 1;
+}
 .search-bar {
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 300px;
+    margin: 10px auto;
     border: 2px solid #ccc;
     border-radius: 25px;
     overflow: hidden;
+    margin-top: -12px ;
+    margin-left: 200px;
 }
 
 .search-bar input {
@@ -45,30 +58,32 @@ header {
 
 .search-bar button {
     background: #e604b1de;
-    color: white;
+    color: rgb(232, 17, 139);
     border: none;
     padding: 8px 15px;
     cursor: pointer;
 }
 
-/* ĐIỀU CHỈNH CHO MÀN HÌNH NHỎ */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .search-bar {
-        width: 80%;
-    }
-
-    .logo img {
-        width: 100px;
+.search-bar button:hover {
+    background: rgb(232, 17, 139);
+}
+.user{
+    margin-top: -45%;
+    margin-right: -50%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.banner{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+@media (max-width:768px) {
+    .banner img{
+        max-height: 300px;
+        object-fit: cover;
     }
 }
