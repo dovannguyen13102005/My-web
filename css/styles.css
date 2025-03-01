@@ -58,8 +58,6 @@ header {
     cursor: pointer;
     color: white;
     padding: 10px;
-    position: relative;
-    z-index: 100;
 }
 
 .search-bar {
