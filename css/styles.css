@@ -1,81 +1,106 @@
-header{
-    font-family: sans-serif;
-    font-size: large;
-    color: black;
-    background-color: blanchedalmond;
-    text-align: center;
-    margin-top: -4%;
-    margin-right: -2%;
-    margin-left: -2%;
-    padding: 50px;
-    size: 50px;
-    border-radius: 15%;
-}
-.logo{
-    margin-top: -8.5%;
-
-    flex: 1;
-    position: relative;
-    z-index: 10;
-}
-.menu{
-    display: flex;
-    list-style: none;
+* {
+    margin: 0;
     padding: 0;
-    margin-left: 100px;
-    margin-top: -60px;
-    position: relative;
-    z-index: 11;
+    box-sizing: border-box;
+}
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
 }
-.menu li{
-    margin-left: 30px;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blanchedalmond;
+    color: black;
+    padding: 15px 20px;
+    position: relative;
 }
-.menu a{
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: gray;
+    padding: 10px 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: white;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
 }
-.other{
-    flex: 1;
+
+.menu li a:hover {
+    color: pink;
 }
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
 .search-bar {
     display: flex;
     align-items: center;
-    width: 300px;
-    margin: 10px auto;
-    border: 2px solid #ccc;
-    border-radius: 25px;
-    overflow: hidden;
-    margin-top: -12px ;
-    margin-left: 200px;
 }
 
 .search-bar input {
-    flex: 1;
-    padding: 8px;
-    border: none;
-    outline: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.search-bar button {
-    background: #e604b1de;
-    color: rgb(232, 17, 139);
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
+.banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
 }
 
-.search-bar button:hover {
-    background: rgb(232, 17, 139);
-}
-.user{
-    margin-top: -45%;
-    margin-right: -50%;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-}
-.banner{
-    margin-top: -10%;
-    position: relative;
-    z-index: -1;
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgb(215, 119, 190);
+        z-index: 1000;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+
+    .menu-icon {
+        display: block;
+        color: black;
+    }
+
+    .menu.show {
+        display: flex;
+    }
 }

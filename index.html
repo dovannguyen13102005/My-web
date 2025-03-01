@@ -7,33 +7,38 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Trang web mua sắm trực tuyến</h1>
-    </header>
-    <div class="logo">
-            <img src="./picture/Screenshot_2025-02-28_220124-removebg-preview.png" alt="logo" width="100">
-    </div>
-    <ul class="menu">
-        <li><a href="index.html">TRANG CHỦ</a></li>
-        <li><a href="./html/food.html">ĐỒ ĂN</a></li>
-        <li><a href="./html/clothes.html">QUẦN ÁO</a></li>
-        <li><a href="./html/household.html">ĐỒ GIA DỤNG</a></li>
-        <li><a href="./html/vehicles.html">PHƯƠNG TIỆN</a></li>
-        <li><a href="./html/points.html">TÍCH ĐIỂM</a></li>
-        <li>
-            <form class="search-bar">
-                <input type="text" id="search-input" placeholder="Nhập từ khóa...">
-                <button type="submit">🔍</button>
-            </form></li>
-        <li>
-            <div class="user">
-                <a href="#"><img src="./picture/download-Photoroom.png" alt="Tài khoản" width="50"></a>
-            </div=>
-        </li>
-    </ul>
-    
-    <div class="banner">
-        <img src="./picture/banner-fashionshow-dustchic.jpg" alt="banner">
-    </div>
+    <div class="container"> 
+        <header>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="logo">
+                <img src="./picture/Screenshot_2025-02-28_220124-removebg-preview.png" alt="logo" width="100">
+                <h1>Trang web mua sắm trực tuyến</h1>
+            </div>
+        </header>
+        
+        <ul class="menu">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="./html/food.html">ĐỒ ĂN</a></li>
+            <li><a href="./html/clothes.html">QUẦN ÁO</a></li>
+            <li><a href="./html/household.html">ĐỒ GIA DỤNG</a></li>
+            <li><a href="./html/vehicles.html">PHƯƠNG TIỆN</a></li>
+            <li><a href="./html/points.html">TÍCH ĐIỂM</a></li>
+            <li>
+                <form class="search-bar">
+                    <input type="text" id="search-input" placeholder="Nhập từ khóa...">
+                    <button type="submit">🔍</button>
+                </form>
+            </li>
+            <li>
+                <div class="user">
+                    <a href="#"><img src="./picture/download-Photoroom.png" alt="Tài khoản" width="50"></a>
+                </div>
+            </li>
+        </ul>
+        <div class="banner">
+            <img src="./picture/banner-fashionshow-dustchic.jpg" alt="banner">
+        </div>
+    </div>  
+    <script src="./js/script.js"></script>
 </body>
 </html>

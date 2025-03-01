@@ -1,3 +1,4 @@
-function test(){
-    document.getElementById("message").innerText = "Helle";
+function toggleMenu() {
+    var menu = document.querySelector(".menu");
+    menu.classList.toggle("show");
 }
